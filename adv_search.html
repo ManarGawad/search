@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/adv_search.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-end">
+      <a class="navbar-brand" style="font-size: 30px;">
+        <span class="g">G</span><span class="o-e">o</span><span class="y-o">o</span><span class="g">g</span><span class="l">l</span><span class="o-e">e</span>
+      </a>
+
+      <div class="collapse navbar-collapse ml-auto flex-grow-0" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item pr-5">
+            <a class="nav-link" href="index.html">Google Search</a>
+          </li>
+          <li class="nav-item pr-5">
+            <a class="nav-link" href="image_search.html">Image Search</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+      <div class="container-fluid">
+        <p class="ad-search o-e">Advanced Search</p>
+      </div>
+      <hr class="mt-4 mb-5">
+
+    <form action="https://google.com/search" method="get" role="form">
+      <div class="container-fluid">
+        <div class="row">
+          <h4 class="col-7 my-4">Find pages with...</h4>
+          <h4 class="col my-4">To do this in the search box.</h4>
+        </div>
+
+        <div class="row">
+          <div class="col-2 mt-3">
+            <p>all these words:</p>
+          </div>
+          <div class="col-5 mt-3">
+            <input type="text" class="w-100" name="q">
+          </div>
+          <div class="col mt-3">
+            <p>Type the important words: tri-colour rat terrier</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2 mt-3">
+            <p>this exact word or phrase:</p>
+          </div>
+          <div class="col-5 mt-3">
+            <input type="text" class="w-100" name="q">
+          </div>
+          <div class="col mt-3">
+            <p>Put exact words in quotes: "rat terrier"</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2 mt-3">
+            <p>any of these words:</p>
+          </div>
+          <div class="col-5 mt-3">
+            <input type="text" class="w-100" name="q">
+          </div>
+          <div class="col mt-3">
+            <p>Type OR between all the words you want: miniature OR standard</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2 mt-3">
+            <p>none of these words:</p>
+          </div>
+          <div class="col-5 mt-3">
+            <input type="text" class="w-100" name="q">
+          </div>
+          <div class="col mt-3">
+            <p>Put a minus sign just before words that you don't want:<br> -rodent, -"Jack Russell"</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2 mt-3">
+            <p>numbers ranging from:</p>
+          </div>
+          <div class="col-2 mt-3">
+            <input type="text" class="w-100" name="q">
+          </div>
+          <div class="col-1 mt-3">
+            <p>to</p>
+          </div>
+          <div class="col-2 mt-3">
+            <input type="text" class="w-100" name="q">
+          </div>
+          <div class="col mt-3">
+            <p>Put two full stops between the numbers and add a unit of measurement:<br>
+              10..35 kg, £300..£500, 2010..2011</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <h4 class="col-7 my-2">Then narrow your results <br> by...</h4>
+        </div>
+
+        <div class="row">
+          <div class="col-2 mt-3">
+            <p>language:</p>
+          </div>
+          <div class="dropdown col-5" name="q">
+            <button class="btn dropdown-toggle w-100 text-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              any language
+            </button>
+            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+              <h6 class="dropdown-header">any language</h6>
+              <a class="dropdown-item" href="#">Arabic</a>
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Germen</a>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <p>Find pages in the language that you select.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2 mt-3">
+            <p>region:</p>
+          </div>
+          <div class="dropdown col-5 mt-3" name="q">
+            <button class="btn dropdown-toggle w-100 text-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              any region
+            </button>
+            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+              <h6 class="dropdown-header">any region</h6>
+              <a class="dropdown-item" href="#">France</a>
+              <a class="dropdown-item" href="#">Egypt</a>
+              <a class="dropdown-item" href="#">China</a>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <p>Find pages published in a particular region.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2 mt-3">
+            <p>last update:</p>
+          </div>
+          <div class="dropdown col-5 mt-3" name="q">
+            <button class="btn dropdown-toggle w-100 text-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              any time
+            </button>
+            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+              <h6 class="dropdown-header">any time</h6>
+              <a class="dropdown-item" href="#">past 24 hours</a>
+              <a class="dropdown-item" href="#">past week</a>
+              <a class="dropdown-item" href="#">past month</a>
+              <a class="dropdown-item" href="#">past year</a>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <p>Find pages updated within the time that you specify.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2 mt-3">
+            <p>site or domain:</p>
+          </div>
+          <div class="col-5 mt-3">
+            <input type="text" class="w-100" name="q">
+          </div>
+          <div class="col mt-3">
+            <p>Search one site (like wikipedia.org ) or limit your results to a domain like <br> .edu, .org or .gov</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2 mt-3">
+            <p>terms appearing:</p>
+          </div>
+          <div class="dropdown col-5 mt-3" name="q">
+            <button class="btn dropdown-toggle w-100 text-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              anywhere in the page
+            </button>
+            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">anywhere in the page</a>
+              <a class="dropdown-item" href="#">in the title of the page</a>
+              <a class="dropdown-item" href="#">in the text of the page</a>
+              <a class="dropdown-item" href="#">in the URL of the page</a>
+              <a class="dropdown-item" href="#">in links to the page</a>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <p>Search for terms in the whole page, page title or web address, or links to <br>
+              the page you're looking for.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2 mt-3">
+            <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637359010419523367-2898136690&rd=1">SafeSearch:</a>
+          </div>
+          <div class="dropdown col-5 mt-3" name="q">
+            <button class="btn dropdown-toggle w-100 text-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Show most relevant results
+            </button>
+            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Show most relevant results</a>
+              <a class="dropdown-item" href="#">Filter explicit results</a>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <p>Tell
+              <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637359010419523367-2898136690&rd=1">SafeSearch</a>
+              whether to filter sexually explicit content.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2 mt-3">
+            <p>file type:</p>
+          </div>
+          <div class="dropdown col-5 mt-3" name="q">
+            <button class="btn dropdown-toggle w-100 text-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              any format
+            </button>
+            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+              <h6 class="dropdown-header">any format</h6>
+              <a class="dropdown-item" href="#">.pdf</a>
+              <a class="dropdown-item" href="#">.xls</a>
+              <a class="dropdown-item" href="#">.ppt</a>
+              <a class="dropdown-item" href="#">.doc</a>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <p>Find pages in the format that you prefer.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2 mt-3">
+            <a>usage right:</p>
+          </div>
+          <div class="dropdown col-5 mt-3" name="q">
+            <button class="btn dropdown-toggle w-100 text-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              all
+            </button>
+            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">all</a>
+              <a class="dropdown-item" href="#">Creative Commons licences</a>
+              <a class="dropdown-item" href="#">Commerical and other licences</a>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <p>Find pages that you are free to use yourself.</p>
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <button class="offset-6 btn btn-primary" type="submit" onclick="sub">Advanced Search </button>
+        </div>
+      </div>
+      </form>
+
+      <hr>
+
+      <div class="container-fluid">
+        <h4 class="my-2">You can also...</h4>
+
+        <div class="mt-4">
+          <a href="https://support.google.com/websearch/answer/2466433?visit_id=637359039400333433-889626969&p=adv_pages_similar&hl=en&rd=1">Find pages that are similar to a URL</a>
+        </div>
+        <div class="">
+          <a href="https://support.google.com/websearch/answer/54068?p=adv_pages_visited&hl=en&visit_id=637359039400333433-889626969&rd=1">Search pages that you've visited</a>
+        </div>
+        <div class="">
+          <a href="https://support.google.com/websearch/answer/2466433?visit_id=637359039400333433-889626969&p=adv_operators&hl=en&rd=1">Use operators in the search box</a>
+        </div>
+        <div class="mb-5">
+          <a href="https://www.google.com/preferences?hl=en-EG">Customise your search settings</a>
+        </div>
+      </div>
+
+    <script type="text/javascript">
+      function sub() {
+        document.getElementById("adv").submit();
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+  </body>
+</html>
