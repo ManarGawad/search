@@ -1,0 +1,37 @@
+.form-rounded {
+border-radius: 3rem;
+}
+
+.search_btn{
+  background-color: #f2f2f2;
+  color: #5F6368;
+}
+
+.nav>li>a{
+   color: black;
+ }
+
+.navbar-brand{
+  font-size: 3rem;
+}
+
+.search {
+   margin-right: 470px;
+   margin-top: 16px;
+   min-width: 40px;
+   position: absolute;
+   color: #9aa0a6;
+}
+
+.mic{
+  margin-left: 520px;
+  margin-top: 16px;
+  min-width: 40px;
+  position: absolute;
+  color: #9aa0a6;
+}
+
+.input-field {
+   width: 100%;
+   padding: 10px 10px 10px 50px;
+}

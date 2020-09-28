@@ -1,0 +1,45 @@
+.form-rounded {
+border-radius: 3rem;
+}
+
+.input-icons {
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+.left-search {
+   margin-right: 480px;
+   margin-top: 16px;
+   min-width: 40px;
+   position: absolute;
+   color: #9aa0a6;
+}
+
+.right-search{
+  margin-left: 530px;
+  margin-top: 16px;
+  min-width: 40px;
+  position: absolute;
+  color: #4285f4;
+}
+
+.cam{
+  margin-left: 370px;
+  margin-top: 16px;
+  min-width: 40px;
+  position: absolute;
+  color: #9aa0a6;
+}
+
+.mic{
+  margin-left: 460px;
+  margin-top: 16px;
+  min-width: 40px;
+  position: absolute;
+  color: #9aa0a6;
+}
+
+.input-field {
+   width: 100%;
+   padding: 10px 10px 10px 50px;
+}

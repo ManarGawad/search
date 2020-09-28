@@ -1,0 +1,34 @@
+.g{
+  color: #4086f4;
+}
+
+.o-e{
+  color: #eb4132;
+}
+
+.y-o{
+  color: #fbbd01;
+}
+
+.l{
+  color: #31aa52;
+}
+
+.container-fluid{
+  padding: 0 3.2em;
+}
+
+.ad-search{
+  font-weight: inherit;
+  font-size: 1.4em
+}
+
+hr{
+  color: #ebebeb;
+}
+
+.dropdown-toggle{
+  background-color: #f5f5f5;
+  background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+  color: #444;
+}
